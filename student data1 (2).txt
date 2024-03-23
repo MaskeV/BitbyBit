@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Learning Platform</title>
+    <link rel="stylesheet" href="vaish.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Our Personalized Learning Platform!</h1>
+        <p>Please select your preferred teaching style or choose a celebrity whose style you'd like to learn:</p>
+       
+        <div class="options">
+            <label for="teaching-style">Select Teaching Style:</label>
+            <select id="teaching-style">
+                <option value="visual">Visual - Learn through videos and images</option>
+                <option value="auditory">Auditory - Learn through voice lessons</option>
+                <option value="interactive">Interactive - Engage in interactive exercises</option>
+            </select>
+           
+            <label for="celebrity-style">Select Celebrity Style:</label>
+            <select id="celebrity-style">
+                <option value="celeb1">Celebrity 1</option>
+                <option value="celeb2">Celebrity 2</option>
+                <option value="celeb3">Celebrity 3</option>
+            </select>
+        </div>
+       
+        <button id="start-learning"><a href="https://chat.openai.com/" >start Learning</a></button>
+       
+        <div class="progress">
+            <p>Thanks To Visit!!!</p>
+        </div>
+       
+        <div class="feedback">
+            <p>Keep up the good work!</p>
+        </div>
+    </div>
+</body>
+
+</html>
