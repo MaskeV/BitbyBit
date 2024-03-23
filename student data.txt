@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Data Monitoring</title>
+<style>
+    body{
+        height: 400px;
+        width: 500px;
+        border: 3px solid black;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 36%;
+    }
+</style>
+</head>
+<body>
+<h1>Student Data Monitoring</h1>
+<div id="studentData">
+</div>
+<script>
+// Array to store student data
+let students = [];
+// Function to add student data
+function addStudentData() {
+    let name = prompt("Enter student's name:");
+    let Class = prompt("Enter student's Class name:");
+    let Course = prompt("Enter student's Course name:");
+    let subject = prompt("Enter student's subject name:");
+    let topic= prompt("Enter student topic name:");
+    let Learning_Aporach= prompt("How you want to learn?");
+    let Doubt= prompt("Enter student Doubt:");
+    let student = {
+        name: name,
+        Class:Class,
+        subject:subject,
+        topic:topic,
+        Doubt: Doubt,
+        Learning_Aporach:Learning_Aporach,
+ };
+    students.push(student);
+    displayStudentData();
+}
+
+// Function to display student data
+function displayStudentData() {
+    let output = "<h2>Student Data:</h2>";
+   students.forEach((student, index) => {
+        output += `<p><strong>Student ${index + 1}:</strong><br>
+                   Name: ${student.name}<br>
+                   Class: ${student.Class}<br>
+                   subject: ${student.subject}<br>
+                   topic: ${student.topic}<br>
+                   Learning_Aporach:${student.Learning_Aporach}<br>
+                   doubt:${student.Doubt}<br>
+                   links:${student.links}
+                   </p>`;
+  });
+    document.getElementById("studentData").innerHTML = output;
+}
+// Add event listener to a button to add student data on click
+document.write("<button onclick='addStudentData()'>Add Student Data</button>");
+</script><br><br>
+<button><a href="vaish.html">Enroll</a></button>
+</body>
+</html>
